@@ -11,46 +11,59 @@ body, header, nav, main, footer, h1, div, img{
     border: 0;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
 /* Style rules for header */
 header {
     background-color:#1d1d20;
     color: #d1d1d1;
-    padding: 1rem 2rem;
+    padding: 20px;
     text-align: center;
+    font-family: "Raleway", sans-serif;
 }
 
 header img {
-    height: 300px;
-    width: 200px;
-    float: left;
+    max-width: 100%;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
 
 /* Style rules for nav */
 nav {
-    padding: 1em 0;
-    text-align: center;
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
+nav li {
+    float: left;
 }
 
 nav ul li a {
-    color: #fff;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    padding: 0.5em 1em;
 }
 
 
@@ -68,6 +81,7 @@ body p{
 img {
     max-width: 100%;
     display: block;
+    border-radius: 6px;
 }
 
 .external-link {
@@ -85,9 +99,80 @@ img {
     text-decoration: none;
 }
 
+.mobile-hide {
+    display: none;
+}
+
+.current-task {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    background-color: #fafafa;
+    color: black;
+    
+}
+
+.current-task li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.current-task a {
+    color: #333;
+    text-decoration: none;
+}
+
+.table {
+    margin: 20px;
+}
+
+.languages-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 0 auto; 
+}
+
+.languages-table th, .languages-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.languages-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+.languages-table td {
+    font-size: 14px;
+}
+
+.contact-info {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#map {
+    width: 90%;
+    height: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
 
 
-/* Style rules for footer */
+footer {
+    margin-top: auto;
+    height: 75px;
+    background-color: #333;
+    color: #d1d1d1;
+    text-align: center;
+    padding: 10px;
+}
+
+
 footer p{
     font-size: 0.75em;
     text-align: center;
